@@ -51,8 +51,8 @@ while True:
         
         if enemy.x == 0 or enemy.x==380:
             enemyspeed=enemyspeed * -1
-            #This line move the enemy that touches the edge down, Use a loop so that all the enemies moves down.
-            enemy.y=enemy.y+20
+            for e in enemies:
+                e.y=e.y+20
             
         
         pygame.draw.rect(screen,(123,200,100),enemy)
