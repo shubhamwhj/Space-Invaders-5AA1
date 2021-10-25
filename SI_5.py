@@ -51,8 +51,8 @@ while True:
         
         if enemy.x == 0 or enemy.x==380:
             enemyspeed=enemyspeed * -1
-            for e in enemies:
-                e.y=e.y+20
+            enemy.y=enemy.y+20
+            
         
         pygame.draw.rect(screen,(123,200,100),enemy)
         
